@@ -18,7 +18,6 @@
 + (instancetype)cellWithTableView:(UITableView *)tableView{
     static NSString *ID = @"CommentCell";
     CommentCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    
     if(cell == nil){
         cell = [[[NSBundle mainBundle] loadNibNamed:@"CommentCell" owner:nil options:nil] lastObject];
     }
